@@ -35,21 +35,25 @@ Output of “show ip bgp”
 <img width="1303" height="146" alt="image" src="https://github.com/user-attachments/assets/54960b84-01d9-4429-aef8-8503db872249" />
 
 
-R2 BGP details:
+<br>R2 BGP details:
 Output of “show ip bgp summary”
-<img width="1307" height="157" alt="image" src="https://github.com/user-attachments/assets/b559d96f-ffcc-4aec-966c-c640b32be284" />
+<img width="1305" height="96" alt="image" src="https://github.com/user-attachments/assets/087d8f7b-9f49-4025-8908-a756581c8e46" />
+
 
 Output of “show ip route bgp”
-<img width="1306" height="129" alt="image" src="https://github.com/user-attachments/assets/033396b9-c209-4167-9afe-448aac70b324" />
+<img width="1307" height="157" alt="image" src="https://github.com/user-attachments/assets/b559d96f-ffcc-4aec-966c-c640b32be284" />
 
 Output of “show ip bgp”
 <img width="1306" height="129" alt="image" src="https://github.com/user-attachments/assets/ed6b5b73-b438-4891-b61e-c0075808904d" />
 
 
 
-R3 BGP details:
+<br>R3 BGP details:
 Output of “show ip bgp summary”
+<img width="1308" height="66" alt="image" src="https://github.com/user-attachments/assets/e5bbb42c-6d83-4e28-a018-66496ca7ef7d" />
 
 Output of “show ip route bgp”
+<img width="1308" height="100" alt="image" src="https://github.com/user-attachments/assets/00e100be-ede3-4e58-8966-f3b874caae8e" />
 
 Output of “show ip bgp”
+<img width="1304" height="125" alt="image" src="https://github.com/user-attachments/assets/fffd8456-328d-4941-bba1-959900bfcf6f" />
