@@ -12,6 +12,12 @@ Devices Used:
 
 ## Configurations
 
+__Note: It is recommended to copy and paste these commands into the routers. Because of the limited width of the table, some commands, which should be treated as one line, are broken into two lines and entering these commands as two lines will throw an error.__
 | R1 Configuration | R2 Configuration | R3 Configuration |
 |---|---|---|
 |enable<br>conf t<br><br>hostname R1<br><br>interface g0/0<br>ip address 192.168.12.1 255.255.255.252<br>no shutdown<br><br>interface loopback0<br>ip address 10.1.1.1 255.255.255.0<br><br>router bgp 65001<br>bgp log-neighbor-changes<br><br>neighbor 192.168.12.2 remote-as 65002<br><br>network 10.1.1.0 mask 255.255.255.0<br><br>end<br>wr|enable<br>conf t<br><br>hostname R2<br><br>interface g0/0<br>ip address 192.168.12.2 255.255.255.252<br>no shutdown<br><br>interface g0/1<br>ip address 192.168.23.1 255.255.255.252<br>no shutdown<br><br>interface loopback0<br>ip address 10.2.2.1 255.255.255.0<br><br>router bgp 65002<br>bgp log-neighbor-changes<br><br>neighbor 192.168.12.1 remote-as 65001<br>neighbor 192.168.23.2 remote-as 65003<br><br>network 10.2.2.0 mask 255.255.255.0<br><br>end<br>wr|enable<br>conf t<br><br>hostname R3<br><br>interface g0/1<br>ip address 192.168.23.2 255.255.255.252<br>no shutdown<br><br>interface loopback0<br>ip address 10.3.3.1 255.255.255.0<br><br>router bgp 65003<br>bgp log-neighbor-changes<br><br>neighbor 192.168.23.1 remote-as 65002<br><br>network 10.3.3.0 mask 255.255.255.0<br><br>end<br>wr|
+
+Understanding the output:
+- Different AS numbers are used (65001/65002/65003) because they represent ISPs since BGP is an exterior gateway protocol.
+- “bgp log-neighbor-changes” allows log message to be printed to the screen (optional).
+- “neighbor 192.168.12.2 remote-as 65002” tell the router who is their neighbor and what AS they are on.
