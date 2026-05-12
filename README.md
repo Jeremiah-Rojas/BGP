@@ -9,8 +9,7 @@
 
 | Router 1 | Router 2 | Router 3 |
 |---|---|---|
-| ```text
-enable
+| <pre>enable
 conf t
 
 hostname R1
@@ -30,9 +29,7 @@ neighbor 192.168.12.2 remote-as 65002
 network 10.1.1.0 mask 255.255.255.0
 
 end
-wr
-``` | ```text
-enable
+wr</pre> | <pre>enable
 conf t
 
 hostname R2
@@ -57,9 +54,7 @@ neighbor 192.168.23.2 remote-as 65003
 network 10.2.2.0 mask 255.255.255.0
 
 end
-wr
-``` | ```text
-enable
+wr</pre> | <pre>enable
 conf t
 
 hostname R3
@@ -79,5 +74,4 @@ neighbor 192.168.23.1 remote-as 65002
 network 10.3.3.0 mask 255.255.255.0
 
 end
-wr
-``` |
+wr</pre> |
