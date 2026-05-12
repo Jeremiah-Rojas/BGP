@@ -21,3 +21,35 @@ Understanding the output:
 - Different AS numbers are used (65001/65002/65003) because they represent ISPs since BGP is an exterior gateway protocol.
 - “bgp log-neighbor-changes” allows log message to be printed to the screen (optional).
 - “neighbor 192.168.12.2 remote-as 65002” tell the router who is their neighbor and what AS they are on.
+
+These images show BGP fully functional and the configuration details:
+
+R1 BGP details:
+Output of “show ip bgp summary”
+<img width="1311" height="75" alt="image" src="https://github.com/user-attachments/assets/dcb99713-0ebb-4c75-846a-7407ba2484fd" />
+
+Output of “show ip route bgp”
+<img width="870" height="163" alt="image" src="https://github.com/user-attachments/assets/c293e293-907f-4308-b385-11e413d3e283" />
+
+Output of “show ip bgp”
+<img width="1303" height="146" alt="image" src="https://github.com/user-attachments/assets/54960b84-01d9-4429-aef8-8503db872249" />
+
+
+R2 BGP details:
+Output of “show ip bgp summary”
+<img width="1307" height="157" alt="image" src="https://github.com/user-attachments/assets/b559d96f-ffcc-4aec-966c-c640b32be284" />
+
+Output of “show ip route bgp”
+<img width="1306" height="129" alt="image" src="https://github.com/user-attachments/assets/033396b9-c209-4167-9afe-448aac70b324" />
+
+Output of “show ip bgp”
+<img width="1306" height="129" alt="image" src="https://github.com/user-attachments/assets/ed6b5b73-b438-4891-b61e-c0075808904d" />
+
+
+
+R3 BGP details:
+Output of “show ip bgp summary”
+
+Output of “show ip route bgp”
+
+Output of “show ip bgp”
