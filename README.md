@@ -5,11 +5,16 @@
 
 <br>This lab demonstrates how to configure BGP (border gateway protocol). BGP is an exterior gateway protocol meaning it operates between autonomous systems (AS); an AS is a collection of networks under one administrative domain like company networks. BGP allows for different entities across the internet, such as an ISP or cloud provider, to communicate and transfer traffic back and forth.__That is why the topology has: Company A, Company B, etc.__
 
+Devices Used:
+- Cisco IOSvL2 15.2.1 switch
+- GNS3 Software
+- Ubuntu Container (running on VMware machine)
+
 ## Configurations
 
-| Router 1 | Router 2 | Router 3 |
+| R1 Configuration | R2 Configuration | R3 Configuration |
 |---|---|---|
-| <pre>enable
+| <pre>"enable
 conf t
 
 hostname R1
@@ -29,7 +34,7 @@ neighbor 192.168.12.2 remote-as 65002
 network 10.1.1.0 mask 255.255.255.0
 
 end
-wr</pre> | <pre>enable
+wr"</pre> | <pre>"enable
 conf t
 
 hostname R2
@@ -54,7 +59,7 @@ neighbor 192.168.23.2 remote-as 65003
 network 10.2.2.0 mask 255.255.255.0
 
 end
-wr</pre> | <pre>enable
+wr"</pre> | <pre>"enable
 conf t
 
 hostname R3
@@ -74,4 +79,4 @@ neighbor 192.168.23.1 remote-as 65002
 network 10.3.3.0 mask 255.255.255.0
 
 end
-wr</pre> |
+wr"</pre> |
