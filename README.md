@@ -71,8 +71,8 @@ show ip bgp summary
 - State/PfxRcd: Session state or prefixes received; this shows whether BGP is working or not. A prefix is a block of IP addresses telling the router where to send traffic destined for a certain IP.
 show ip route bgp (for learned routes). This shows routes learned through BGP and is self explanatory.
 show ip bgp (for BGP table). This shows the BGP table and below are the meaning of certain aspects of the output:
-- * = valid route
-- > = best route
+- /* = valid route
+- /> = best route
 - Network: Destination prefix
 - Next Hop: Where packets are sent next
 - Metric: Not applicable
