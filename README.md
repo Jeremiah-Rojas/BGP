@@ -6,7 +6,7 @@
 <br>This lab demonstrates how to configure BGP (border gateway protocol). BGP is an exterior gateway protocol meaning it operates between autonomous systems (AS); an AS is a collection of networks under one administrative domain like company networks. BGP allows for different entities across the internet, such as an ISP or cloud provider, to communicate and transfer traffic back and forth.__That is why the topology has: Company A, Company B, etc.__
 
 Devices Used:
-- Cisco IOSvL2 15.2.1 switch
+- Cisco IOSv 15.7 router
 - GNS3 Software
 - Ubuntu Container (running on VMware machine)
 
